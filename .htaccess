@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+Header set Access-Control-Allow-Origin "*"
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^home$ ?page=home [L,QSA]
+RewriteRule ^shop$ ?page=shop [L,QSA]
+RewriteRule ^history$ ?page=history [L,QSA]
+RewriteRule ^help$ ?page=help [L,QSA]
+RewriteRule ^topup$ ?page=topup [L,QSA]
+RewriteRule ^profile$ ?page=profile [L,QSA]
+RewriteRule ^backend$ ?page=backend [L,QSA]
+RewriteRule ^login$ ?page=login [L,QSA]
+RewriteRule ^register$ ?page=register [L,QSA]
